@@ -28,7 +28,7 @@ ReactDOM.render(
       <Route path="/ChronoTools" component={Admin} />
       {/* add redirect for first page */}
       {/* <Redirect strict exact from="/ChronoTools" to="/ChronoTools/" /> */}
-      <Redirect strict  from="*" to="/ChronoTools" />
+      <Redirect strict from="*" to="/ChronoTools" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

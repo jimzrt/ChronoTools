@@ -16,11 +16,12 @@ import FooterAdmin from "components/Footers/FooterAdmin.js";
 // import Settings from "views/admin/Settings.js";
 // import Tables from "views/admin/Tables.js";
 import pageMap from "components/pages";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 export default function Admin() {
   const location = useLocation();
-  return location.pathname in pageMap ? (<>
+  return location.pathname in pageMap ? (
+    <>
       <Sidebar />
       <div className="relative md:ml-64 bg-blueGray-100">
         <AdminNavbar />
@@ -40,16 +41,14 @@ export default function Admin() {
                 ))}
                 <Redirect from="*" to="/ChronoTools" />
               </Switch>
-
             </div>
-
 
             <FooterAdmin />
           </div>
         </div>
-
       </div>
-    </>) : (<Redirect to="/ChronoTools" />)
-
-  ;
+    </>
+  ) : (
+    <Redirect to="/ChronoTools" />
+  );
 }

@@ -21,8 +21,8 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      'chrono1': '#922b46',
-      'chrono2': '#382e2f',
+      chrono1: "#922b46",
+      chrono2: "#382e2f",
     },
     extend: {
       minHeight: {

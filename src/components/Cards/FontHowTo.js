@@ -2,7 +2,7 @@ import React from "react";
 
 // components
 
-export default function CardProfile() {
+export default function FontHowTo() {
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
@@ -39,18 +39,32 @@ export default function CardProfile() {
             <div className="flex flex-wrap justify-center">
               <div className="w-full lg:w-9/12 px-4 font-mono">
                 <p className="mb-4 text-md leading-relaxed text-blueGray-700">
-                  The font used in Chrono Trigger is encrypted (<i className="font-light">string_2.bin</i>) and packed (<i className="font-light">resources.bin</i>).
+                  The font used in Chrono Trigger is encrypted (
+                  <i className="font-light">string_2.bin</i>) and packed (
+                  <i className="font-light">resources.bin</i>).
                   <br />
-                  Packed files can be extracted or replaced with <a target='_blank' className="font-semibold" href="http://rivernyxx.com/downloads.html" rel="noreferrer">CT_Explore by rivernyxx</a>.
+                  Packed files can be extracted or replaced with{" "}
+                  <a
+                    target="_blank"
+                    className="font-semibold"
+                    href="http://rivernyxx.com/downloads.html"
+                    rel="noreferrer"
+                  >
+                    CT_Explore by rivernyxx
+                  </a>
+                  .
                   <br />
-                  To generate a new font, you can encrypt any .ttf font file (beware of missing glyphs) using this tool and replace it in CT_Explore.
-                  You can also decrypt encrypted files to a .ttf file.
+                  To generate a new font, you can encrypt any .ttf font file
+                  (beware of missing glyphs) using this tool and replace it via
+                  CT_Explore. You can also decrypt encrypted files to a .ttf
+                  file.
                 </p>
                 <hr className="my-4 md:min-w-full" />
                 <p>
                   No files are uploaded to the server!
                   <br />
-                  All processing is done locally in the browser via JavaScript and WebAssembly (which makes it pretty fast ).
+                  All processing is done locally in the browser via JavaScript
+                  and WebAssembly (which makes it pretty fast ).
                 </p>
                 {/* <a
                   href="#pablo"

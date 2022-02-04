@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import pageMap from "components/pages";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 export default function Sidebar() {
   const location = useLocation();
@@ -25,10 +25,12 @@ export default function Sidebar() {
           className="md:block text-left md:pb-2  mr-0 whitespace-nowrap  p-4 px-0 justify-center  flex flex-1 md:flex-initial"
           to="/ChronoTools"
         >
-          <img src={require("assets/img/logo.jpg")}
-          alt="..."
-          className="  "
-          style={{maxWidth: "150px"}} />
+          <img
+            src={require("assets/img/logo.jpg")}
+            alt="..."
+            className="  "
+            style={{ maxWidth: "150px" }}
+          />
         </Link>
         {/* User */}
         {/* <ul className="md:hidden items-center flex flex-wrap list-none">
@@ -62,7 +64,7 @@ export default function Sidebar() {
           </div>
 
           <ul className="md:flex-col md:min-w-full flex flex-col list-none">
-          <li className="items-center">
+            <li className="items-center">
               <Link
                 className={
                   "text-xs uppercase py-3 font-bold block " +
@@ -73,12 +75,14 @@ export default function Sidebar() {
                 to={"/ChronoTools"}
                 onClick={() => setCollapseShow("hidden")}
               >
-                <i className={
-                  `${pageMap["/ChronoTools"].iconClass} mr-2 text-sm ` +
-                  (location.pathname == "/ChronoTools"
-                    ? "opacity-75"
-                    : "text-blueGray-300")
-                } />{" "}
+                <i
+                  className={
+                    `${pageMap["/ChronoTools"].iconClass} mr-2 text-sm ` +
+                    (location.pathname == "/ChronoTools"
+                      ? "opacity-75"
+                      : "text-blueGray-300")
+                  }
+                />{" "}
                 {pageMap["/ChronoTools"].title}
               </Link>
             </li>
@@ -92,36 +96,37 @@ export default function Sidebar() {
           {/* Navigation */}
 
           <ul className="md:flex-col md:min-w-full flex flex-col list-none">
-          {Object.keys(pageMap).map((key) => pageMap[key].category === "tool" && (
-
-            <li key={key} className="items-center">
-            <Link
-              className={
-                "text-xs uppercase py-3 font-bold block " +
-                (location.pathname == key
-                  ? "text-lightBlue-500 hover:text-lightBlue-600"
-                  : "text-blueGray-700 hover:text-blueGray-500")
-              }
-              to={key}
-              onClick={() => setCollapseShow("hidden")}
-            >
-              <i className={
-                `${pageMap[key].iconClass} mr-2 text-sm ` +
-                (location.pathname == key
-                  ? "opacity-75"
-                  : "text-blueGray-300")
-              } />{" "}
-              {pageMap[key].title}
-            </Link>
-          </li>
-
-          ))}
+            {Object.keys(pageMap).map(
+              (key) =>
+                pageMap[key].category === "tool" && (
+                  <li key={key} className="items-center">
+                    <Link
+                      className={
+                        "text-xs uppercase py-3 font-bold block " +
+                        (location.pathname == key
+                          ? "text-lightBlue-500 hover:text-lightBlue-600"
+                          : "text-blueGray-700 hover:text-blueGray-500")
+                      }
+                      to={key}
+                      onClick={() => setCollapseShow("hidden")}
+                    >
+                      <i
+                        className={
+                          `${pageMap[key].iconClass} mr-2 text-sm ` +
+                          (location.pathname == key
+                            ? "opacity-75"
+                            : "text-blueGray-300")
+                        }
+                      />{" "}
+                      {pageMap[key].title}
+                    </Link>
+                  </li>
+                )
+            )}
           </ul>
 
           {/* Divider */}
           <hr className="my-4 md:min-w-full" />
-
-
         </div>
       </div>
     </nav>
