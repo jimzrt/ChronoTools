@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ChronoTools/static/css/main.d32702f3.css",
+    "main.js": "/ChronoTools/static/js/main.b320a57c.js",
+    "static/media/fa-solid-900.svg": "/ChronoTools/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
+    "static/media/fa-brands-400.svg": "/ChronoTools/static/media/fa-brands-400.216edb96b562c79adc09.svg",
+    "static/media/fa-solid-900.eot": "/ChronoTools/static/media/fa-solid-900.efbd5d20e407bbf85f2b.eot",
+    "static/media/fa-solid-900.ttf": "/ChronoTools/static/media/fa-solid-900.07c3313b24f7b1ca85ee.ttf",
+    "static/media/fa-regular-400.svg": "/ChronoTools/static/media/fa-regular-400.19e27d348fefc21941e0.svg",
+    "static/media/fa-brands-400.eot": "/ChronoTools/static/media/fa-brands-400.89a52ae1d02b86d61439.eot",
+    "static/media/fa-brands-400.ttf": "/ChronoTools/static/media/fa-brands-400.9e138496e8f1719c6ebf.ttf",
+    "static/media/fa-solid-900.woff": "/ChronoTools/static/media/fa-solid-900.c6ec080084769a6d8a34.woff",
+    "static/media/fa-brands-400.woff": "/ChronoTools/static/media/fa-brands-400.329a95a9172fdb2cccb4.woff",
+    "static/media/fa-solid-900.woff2": "/ChronoTools/static/media/fa-solid-900.ada6e6df937f7e5e8b79.woff2",
+    "static/media/fa-brands-400.woff2": "/ChronoTools/static/media/fa-brands-400.c1210e5ebe4344da5083.woff2",
+    "static/media/fa-regular-400.eot": "/ChronoTools/static/media/fa-regular-400.4079ae2d2a15d0689568.eot",
+    "static/media/fa-regular-400.ttf": "/ChronoTools/static/media/fa-regular-400.1017bce89c72f95bcf8e.ttf",
+    "static/media/logo.jpg": "/ChronoTools/static/media/logo.1041e3d962cb16e13eae.jpg",
+    "static/media/fa-regular-400.woff": "/ChronoTools/static/media/fa-regular-400.3672264812746c3c7225.woff",
+    "static/media/team-2-800x800.jpg": "/ChronoTools/static/media/team-2-800x800.402fea8807baabddb5e8.jpg",
+    "static/media/fa-regular-400.woff2": "/ChronoTools/static/media/fa-regular-400.68c5af1f48e2bfca1e57.woff2",
+    "index.html": "/ChronoTools/index.html",
+    "main.d32702f3.css.map": "/ChronoTools/static/css/main.d32702f3.css.map",
+    "main.b320a57c.js.map": "/ChronoTools/static/js/main.b320a57c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d32702f3.css",
+    "static/js/main.b320a57c.js"
+  ]
+}
