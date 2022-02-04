@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ChronoTools/static/css/main.d32702f3.css",
-    "main.js": "/ChronoTools/static/js/main.b320a57c.js",
+    "main.js": "/ChronoTools/static/js/main.32ada11c.js",
     "static/media/fa-solid-900.svg": "/ChronoTools/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
     "static/media/fa-brands-400.svg": "/ChronoTools/static/media/fa-brands-400.216edb96b562c79adc09.svg",
     "static/media/fa-solid-900.eot": "/ChronoTools/static/media/fa-solid-900.efbd5d20e407bbf85f2b.eot",
@@ -21,10 +21,10 @@
     "static/media/fa-regular-400.woff2": "/ChronoTools/static/media/fa-regular-400.68c5af1f48e2bfca1e57.woff2",
     "index.html": "/ChronoTools/index.html",
     "main.d32702f3.css.map": "/ChronoTools/static/css/main.d32702f3.css.map",
-    "main.b320a57c.js.map": "/ChronoTools/static/js/main.b320a57c.js.map"
+    "main.32ada11c.js.map": "/ChronoTools/static/js/main.32ada11c.js.map"
   },
   "entrypoints": [
     "static/css/main.d32702f3.css",
-    "static/js/main.b320a57c.js"
+    "static/js/main.32ada11c.js"
   ]
 }
