@@ -1,0 +1,41 @@
+
+
+.bg-chrono {
+  background: rgb(146,43,70);
+  background: linear-gradient(144deg, rgba(146,43,70,1) 0%, rgba(56,46,47,1) 100%);
+}
+
+.rolling {
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+	animation: rolling 12s 1s infinite linear;
+}
+
+@keyframes rolling {
+    0% {
+        transform: translate(0);
+        background-image: url("assets/img/mWalkRight.gif");
+      }
+      19.99% {
+        transform: translate(400px);
+        background-image: url("assets/img/mWalkRight.gif");
+      }
+      20%, 49.99% {
+        transform: translate(400px);
+        background-image: url("assets/img/mFront.gif");
+      }
+      50% {
+        transform: translate(400px);
+        background-image: url("assets/img/mWalkLeft.gif");
+      }
+      69.99% {
+        transform: translate(0);
+        background-image: url("assets/img/mWalkLeft.gif");
+      }
+      70%, 100% {
+        transform: translate(0);
+        background-image: url("assets/img/mFront.gif");
+
+      }
+}
