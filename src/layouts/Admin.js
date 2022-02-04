@@ -39,7 +39,7 @@ export default function Admin() {
                     component={pageMap[key].component}
                   />
                 ))}
-                <Redirect from="*" to="/ChronoTools" />
+                {/* <Redirect from="*" to="/" /> */}
               </Switch>
             </div>
 
@@ -49,6 +49,6 @@ export default function Admin() {
       </div>
     </>
   ) : (
-    <Redirect to="/ChronoTools" />
+    <Redirect to="/" />
   );
 }

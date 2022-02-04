@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/styles/tailwind.css";
@@ -17,7 +17,7 @@ import Admin from "layouts/Admin.js";
 // import Index from "views/Index.js";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       {/* add routes with layouts */}
       {/* <Route path="/admin" component={Admin} /> */}
@@ -25,11 +25,11 @@ ReactDOM.render(
       {/* add routes without layouts */}
       {/* <Route path="/landing" exact component={Landing} />
       <Route path="/profile" exact component={Profile} /> */}
-      <Route path="/ChronoTools" component={Admin} />
+      <Route path="/" component={Admin} />
       {/* add redirect for first page */}
       {/* <Redirect strict exact from="/ChronoTools" to="/ChronoTools/" /> */}
-      <Redirect strict from="*" to="/ChronoTools" />
+      <Redirect strict from="*" to="/" />
     </Switch>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );

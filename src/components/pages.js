@@ -10,13 +10,13 @@ import FontCrypto, {
 // import Tables, {title as tableTitle} from "views/admin/Tables.js";
 
 const pageMap = {
-  "/ChronoTools": {
+  "/": {
     component: Dashboard,
     title: dashboardTitle,
     description: dashboardDescription,
     iconClass: "fas fa-tv",
   },
-  "/ChronoTools/font-crypto": {
+  "/font-crypto": {
     component: FontCrypto,
     title: fontCryptoTitle,
     description: fontCryptoDescription,

@@ -23,7 +23,7 @@ export default function Sidebar() {
         {/* Brand */}
         <Link
           className="md:block text-left md:pb-2  mr-0 whitespace-nowrap  p-4 px-0 justify-center  flex flex-1 md:flex-initial"
-          to="/ChronoTools"
+          to="/"
         >
           <img
             src={require("assets/img/logo.jpg")}
@@ -68,22 +68,22 @@ export default function Sidebar() {
               <Link
                 className={
                   "text-xs uppercase py-3 font-bold block " +
-                  (location.pathname === "/ChronoTools"
+                  (location.pathname === "/"
                     ? "text-lightBlue-500 hover:text-lightBlue-600"
                     : "text-blueGray-700 hover:text-blueGray-500")
                 }
-                to={"/ChronoTools"}
+                to={"/"}
                 onClick={() => setCollapseShow("hidden")}
               >
                 <i
                   className={
-                    `${pageMap["/ChronoTools"].iconClass} mr-2 text-sm ` +
-                    (location.pathname == "/ChronoTools"
+                    `${pageMap["/"].iconClass} mr-2 text-sm ` +
+                    (location.pathname == "/"
                       ? "opacity-75"
                       : "text-blueGray-300")
                   }
                 />{" "}
-                {pageMap["/ChronoTools"].title}
+                {pageMap["/"].title}
               </Link>
             </li>
           </ul>
