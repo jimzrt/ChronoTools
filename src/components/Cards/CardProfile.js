@@ -19,7 +19,7 @@ export default function CardProfile() {
             </div>
           </div>
           <div className="text-center mt-12">
-            <h3 className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
+            <h3 className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2 font-mono">
               How To
             </h3>
             {/* <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
@@ -37,13 +37,13 @@ export default function CardProfile() {
           </div>
           <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
             <div className="flex flex-wrap justify-center">
-              <div className="w-full lg:w-9/12 px-4">
+              <div className="w-full lg:w-9/12 px-4 font-mono">
                 <p className="mb-4 text-md leading-relaxed text-blueGray-700">
-                  The font used in Chrono Trigger is encrypted (string_2.bin) and packed (resources.bin).
+                  The font used in Chrono Trigger is encrypted (<i className="font-light">string_2.bin</i>) and packed (<i className="font-light">resources.bin</i>).
                   <br />
-                  Packed files can be extracted or replaced with CT_Explore.
+                  Packed files can be extracted or replaced with <a target='_blank' className="font-semibold" href="http://rivernyxx.com/downloads.html" rel="noreferrer">CT_Explore by rivernyxx</a>.
                   <br />
-                  To generate a new font, you can encrypt any .ttf font file (beware of missing charakters) using this tool and replace it in CT_Explore.
+                  To generate a new font, you can encrypt any .ttf font file (beware of missing glyphs) using this tool and replace it in CT_Explore.
                   You can also decrypt encrypted files to a .ttf file.
                 </p>
                 <hr className="my-4 md:min-w-full" />
