@@ -6,10 +6,12 @@ import FontCrypto, {
   title as fontCryptoTitle,
   description as fontCryptoDescription,
 } from "views/admin/FontCrypto.js";
-// import Maps, {title as mapsTitle} from "views/admin/Maps.js";
-// import Tables, {title as tableTitle} from "views/admin/Tables.js";
+import SavegameEditor, {
+  title as savegameEditorTitle,
+  description as savegameEditorDescription,
+} from "views/admin/SavegameEditor.js";
 
-const pageMap = {
+const PageMap = {
   "/": {
     component: Dashboard,
     title: dashboardTitle,
@@ -21,6 +23,13 @@ const pageMap = {
     title: fontCryptoTitle,
     description: fontCryptoDescription,
     iconClass: "fas fa-cog",
+    category: "tool",
+  },
+  "/savegame": {
+    component: SavegameEditor,
+    title: savegameEditorTitle,
+    description: savegameEditorDescription,
+    iconClass: "fas fa-save",
     category: "tool",
   },
   // "/tables": {
@@ -35,4 +44,4 @@ const pageMap = {
   // },
 };
 
-export default pageMap;
+export default PageMap;

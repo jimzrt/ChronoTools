@@ -15,12 +15,12 @@ import FooterAdmin from "components/Footers/FooterAdmin.js";
 // import Maps from "views/admin/Maps.js";
 // import Settings from "views/admin/Settings.js";
 // import Tables from "views/admin/Tables.js";
-import pageMap from "components/pages";
+import PageMap from "components/pages";
 import { useLocation } from "react-router-dom";
 
 export default function Admin() {
   const location = useLocation();
-  return location.pathname in pageMap ? (
+  return location.pathname in PageMap ? (
     <>
       <Sidebar />
       <div className="relative md:ml-64 bg-blueGray-100">
@@ -31,12 +31,12 @@ export default function Admin() {
           <div className="px-4 md:px-10 mx-auto w-full flex-grow">
             <div className="-mt-24">
               <Switch>
-                {Object.keys(pageMap).map((key) => (
+                {Object.keys(PageMap).map((key) => (
                   <Route
                     key={key}
                     path={key}
                     exact
-                    component={pageMap[key].component}
+                    component={PageMap[key].component}
                   />
                 ))}
                 {/* <Redirect from="*" to="/" /> */}

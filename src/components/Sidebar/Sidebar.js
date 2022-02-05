@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import pageMap from "components/pages";
+import PageMap from "components/pages";
 import { useLocation } from "react-router-dom";
 
 export default function Sidebar() {
@@ -77,13 +77,13 @@ export default function Sidebar() {
               >
                 <i
                   className={
-                    `${pageMap["/"].iconClass} mr-2 text-sm ` +
+                    `${PageMap["/"].iconClass} mr-2 text-sm ` +
                     (location.pathname == "/"
                       ? "opacity-75"
                       : "text-blueGray-300")
                   }
                 />{" "}
-                {pageMap["/"].title}
+                {PageMap["/"].title}
               </Link>
             </li>
           </ul>
@@ -96,9 +96,9 @@ export default function Sidebar() {
           {/* Navigation */}
 
           <ul className="md:flex-col md:min-w-full flex flex-col list-none">
-            {Object.keys(pageMap).map(
+            {Object.keys(PageMap).map(
               (key) =>
-                pageMap[key].category === "tool" && (
+                PageMap[key].category === "tool" && (
                   <li key={key} className="items-center">
                     <Link
                       className={
@@ -112,13 +112,13 @@ export default function Sidebar() {
                     >
                       <i
                         className={
-                          `${pageMap[key].iconClass} mr-2 text-sm ` +
+                          `${PageMap[key].iconClass} mr-2 text-sm ` +
                           (location.pathname == key
                             ? "opacity-75"
                             : "text-blueGray-300")
                         }
                       />{" "}
-                      {pageMap[key].title}
+                      {PageMap[key].title}
                     </Link>
                   </li>
                 )

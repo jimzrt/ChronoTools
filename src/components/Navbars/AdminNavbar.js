@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useLocation } from "react-router-dom";
-import pageMap from "components/pages";
+import PageMap from "components/pages";
 
 export default function Navbar() {
   const location = useLocation();
@@ -16,7 +16,7 @@ export default function Navbar() {
       >
         {/* Brand */}
         <div className="text-white text-md uppercase inline-block font-semibold">
-          {pageMap[location.pathname].description}
+          {PageMap[location.pathname].description}
         </div>
         {/* Form */}
         {/* <form className="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">

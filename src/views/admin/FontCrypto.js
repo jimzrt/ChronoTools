@@ -5,9 +5,9 @@ import React from "react";
 import CardCrypto from "components/Cards/Cryption/CardCrypto.js";
 import FontHowTo from "components/Cards/FontHowTo.js";
 
-export const title = "FontCrypto";
+export const title = "Chrono Font";
 export const description =
-  "FontCrypto - Encrypt and Decrypt Chrono Trigger Fonts";
+  "Chrono Font - Encrypt and Decrypt Chrono Trigger Fonts";
 
 export default function FontCrypto() {
   return (
