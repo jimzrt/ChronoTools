@@ -357,6 +357,10 @@ const items_offset_end = items_offset_start + items.length * 3;
 const base_offset = 0x434;
 const char_offset = 0x58;
 
+const x_pos_offset = 0x403;
+const y_pos_offset = 0x404;
+
+
 const CardSave = () => {
   const [module, setModule] = useState();
 

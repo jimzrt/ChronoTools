@@ -127,6 +127,44 @@ export default function Sidebar() {
 
           {/* Divider */}
           <hr className="my-4 md:min-w-full" />
+          {/* Heading */}
+          <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+            Patches
+          </h6>
+          {/* Navigation */}
+
+          <ul className="md:flex-col md:min-w-full flex flex-col list-none">
+            {Object.keys(PageMap).map(
+              (key) =>
+                PageMap[key].category === "patch" && (
+                  <li key={key} className="items-center">
+                    <Link
+                      className={
+                        "text-xs uppercase py-3 font-bold block " +
+                        (location.pathname == key
+                          ? "text-lightBlue-500 hover:text-lightBlue-600"
+                          : "text-blueGray-700 hover:text-blueGray-500")
+                      }
+                      to={key}
+                      onClick={() => setCollapseShow("hidden")}
+                    >
+                      <i
+                        className={
+                          `${PageMap[key].iconClass} mr-2 text-sm ` +
+                          (location.pathname == key
+                            ? "opacity-75"
+                            : "text-blueGray-300")
+                        }
+                      />{" "}
+                      {PageMap[key].title}
+                    </Link>
+                  </li>
+                )
+            )}
+          </ul>
+
+          {/* Divider */}
+          <hr className="my-4 md:min-w-full" />
         </div>
       </div>
     </nav>

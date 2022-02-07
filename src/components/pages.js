@@ -10,6 +10,10 @@ import SavegameEditor, {
   title as savegameEditorTitle,
   description as savegameEditorDescription,
 } from "views/admin/SavegameEditor.js";
+import ResizableWindow, {
+  title as resizableWindowTitle,
+  description as resizableWindowDescription,
+} from "views/admin/ResizableWindow.js";
 
 const PageMap = {
   "/": {
@@ -31,6 +35,13 @@ const PageMap = {
     description: savegameEditorDescription,
     iconClass: "fas fa-save",
     category: "tool",
+  },
+  "/resizable-window": {
+    component: ResizableWindow,
+    title: resizableWindowTitle,
+    description: resizableWindowDescription,
+    iconClass: "fas fa-save",
+    category: "patch",
   },
   // "/tables": {
   //     component: Tables,
