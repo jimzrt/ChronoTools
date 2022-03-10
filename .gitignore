@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 commit.sh
+src/modules/debug.log
+src/views/admin/debug.log
