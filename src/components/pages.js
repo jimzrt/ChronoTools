@@ -1,45 +1,33 @@
-import Dashboard, {
-  title as dashboardTitle,
-  description as dashboardDescription,
-} from "views/admin/Dashboard.js";
-import FontCrypto, {
-  title as fontCryptoTitle,
-  description as fontCryptoDescription,
-} from "views/admin/FontCrypto.js";
-import SavegameEditor, {
-  title as savegameEditorTitle,
-  description as savegameEditorDescription,
-} from "views/admin/SavegameEditor.js";
-import ResizableWindow, {
-  title as resizableWindowTitle,
-  description as resizableWindowDescription,
-} from "views/admin/ResizableWindow.js";
+import Dashboard from "views/admin/Dashboard.js";
+import FontCrypto from "views/admin/FontCrypto.js";
+import SavegameEditor from "views/admin/SavegameEditor.js";
+import DefilterView from "views/admin/DefilterView.js";
 
 const PageMap = {
   "/": {
     component: Dashboard,
-    title: dashboardTitle,
-    description: dashboardDescription,
+    title: Dashboard.title,
+    description: Dashboard.description,
     iconClass: "fas fa-tv",
   },
   "/font-crypto": {
     component: FontCrypto,
-    title: fontCryptoTitle,
-    description: fontCryptoDescription,
+    title: FontCrypto.title,
+    description: FontCrypto.description,
     iconClass: "fas fa-cog",
     category: "tool",
   },
   "/savegame": {
     component: SavegameEditor,
-    title: savegameEditorTitle,
-    description: savegameEditorDescription,
+    title: SavegameEditor.title,
+    description: SavegameEditor.description,
     iconClass: "fas fa-save",
     category: "tool",
   },
-  "/resizable-window": {
-    component: ResizableWindow,
-    title: resizableWindowTitle,
-    description: resizableWindowDescription,
+  "/defilter": {
+    component: DefilterView,
+    title: DefilterView.title,
+    description: DefilterView.description,
     iconClass: "fas fa-save",
     category: "patch",
   },

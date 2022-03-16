@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 
-const CardResizableWindow = () => {
+const CardDefilter = () => {
+
+  // https://github.com/cocos2d/cocos2d-x/blob/90f6542cf7fb081335f04e474b880d7ce8c445a1/cocos/renderer/CCTexture2D.cpp#L137
+  const patchLocation = 0x260873;
 
   const [libCocosFile, setLibCocosFile] = useState();
   const [statusMessage, setStatusMessage] = useState("");
@@ -38,11 +41,11 @@ const CardResizableWindow = () => {
     const fileReader = FileStreamReader();
 
     const libCocos = await fileReader(libCocosFile);
-    if(libCocos[0x251771] === 149) {
-        libCocos[0x251771] = 148;
+    if(libCocos[patchLocation] === 1) {
+        libCocos[patchLocation] = 0;
         setStatusMessage("Patched!");
-    } else if(libCocos[0x251771] === 148) {
-        libCocos[0x251771] = 149;
+    } else if(libCocos[patchLocation] === 0) {
+        libCocos[patchLocation] = 1;
         setStatusMessage("Patch reverted!");
     } else {
         setStatusMessage("Unexpected value found...");
@@ -78,6 +81,7 @@ const CardResizableWindow = () => {
                     <input
                       onChange={(e) => setLibCocosFile(e.target.files[0])}
                       type="file"
+                      accept=".dll"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     />
                   </div>
@@ -105,4 +109,4 @@ const CardResizableWindow = () => {
   );
 };
 
-export default CardResizableWindow;
+export default CardDefilter;

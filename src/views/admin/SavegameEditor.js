@@ -1,8 +1,8 @@
 
 import CardSave from "components/Cards/Cryption/CardSave.js";
 
-export const title = "Savegame Editor";
-export const description = "Savegame Editor";
+const title = "Savegame Editor";
+const description = "Savegame Editor";
 
 export default function SavegameEditor() {
   return (
@@ -15,3 +15,5 @@ export default function SavegameEditor() {
     </>
   );
 }
+SavegameEditor.title = title;
+SavegameEditor.description = description;

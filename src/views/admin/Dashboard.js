@@ -7,8 +7,8 @@ import CardBarChart from "components/Cards/CardBarChart.js";
 // import CardPageVisits from "components/Cards/CardPageVisits.js";
 // import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
-export const title = "Home";
-export const description = "Dashboard - more to come";
+const title = "Home";
+const description = "Dashboard - more to come";
 
 export default function Dashboard() {
   return (
@@ -47,3 +47,5 @@ export default function Dashboard() {
     </>
   );
 }
+Dashboard.title = title;
+Dashboard.description = description;
