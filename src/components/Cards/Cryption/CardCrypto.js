@@ -87,7 +87,7 @@ const CardCrypto = () => {
     );
     const header = new Int8Array([0, 0, 0, 0, 0, 0, 0, 0]);
 
-    const encryptedWithHeader = new Int8Array(encrypted.length + header.length);
+    const encryptedWithHeader = new Int8Array(header.length + encrypted.length);
     encryptedWithHeader.set(header);
     encryptedWithHeader.set(encrypted, header.length);
 

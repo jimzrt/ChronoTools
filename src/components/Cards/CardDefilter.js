@@ -6,6 +6,9 @@ const CardDefilter = () => {
   // https://github.com/cocos2d/cocos2d-x/blob/90f6542cf7fb081335f04e474b880d7ce8c445a1/cocos/renderer/CCTexture2D.cpp#L137
   const patchLocation = 0x260873;
 
+  // https://github.com/cocos2d/cocos2d-x/blob/90f6542cf7fb081335f04e474b880d7ce8c445a1/cocos/renderer/CCTexture2D.cpp#L607
+  const patchLocation2 = 0x262a55;
+
   const [libCocosFile, setLibCocosFile] = useState();
   const [statusMessage, setStatusMessage] = useState("");
 
@@ -41,17 +44,9 @@ const CardDefilter = () => {
     const fileReader = FileStreamReader();
 
     const libCocos = await fileReader(libCocosFile);
-    if(libCocos[patchLocation] === 1) {
-        libCocos[patchLocation] = 0;
-        setStatusMessage("Patched!");
-    } else if(libCocos[patchLocation] === 0) {
-        libCocos[patchLocation] = 1;
-        setStatusMessage("Patch reverted!");
-    } else {
-        setStatusMessage("Unexpected value found...");
-        return
-    }
-
+    libCocos[patchLocation] = 0;
+    libCocos[patchLocation2] = 1;
+    setStatusMessage("Patched!");
 
 
     // patch file
