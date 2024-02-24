@@ -7,7 +7,7 @@ const CardDefilter = () => {
   const patchLocation = 0x260873;
 
   // https://github.com/cocos2d/cocos2d-x/blob/90f6542cf7fb081335f04e474b880d7ce8c445a1/cocos/renderer/CCTexture2D.cpp#L607
-  const patchLocation2 = 0x262a55;
+  const patchLocation2 = 0x2629E6;
 
   const [libCocosFile, setLibCocosFile] = useState();
   const [statusMessage, setStatusMessage] = useState("");
